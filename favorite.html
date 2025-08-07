@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>鞋子電商</title>
+
+   <!-- Google Fonts (建議放最上面) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=LXGW+Marker+Gothic&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- 自訂 CSS -->
+  <link rel="stylesheet" href="/scss/all.css">
+  <script type="module" crossorigin src="/my-vite-site/assets/main-DgVqRnAR.js"></script>
+  <link rel="stylesheet" crossorigin href="/my-vite-site/assets/main-BWxe_2Z8.css">
+</head>
+  <body class="page-favorite">   
+    <header>
+    <div class="container d-flex flex-wrap gap-0 gap-md-3 align-items-center justify-content-between">
+            <div class="logo order-1 ms-3 ms-md-0"><a href="index.html"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e1ad10bd2260f80c5f65be5bfc5042790a261115/2025-week1/logo.svg" alt="網站logo"></a></div>
+            <nav>
+                <ul class="d-flex w-100"><li class="active"><a href="product.html">商品列表</a></li>
+                    <li><a href="brand.html">品牌故事</a></li>
+                </ul>
+            </nav>
+            <div class="icon order-2 order-md-3 me-3 me-md-0"><a href="favorite.html"><i class="bi bi-person"></i></a></div>
+    </div>
+</header>
+     <section class="collection">
+        <div class="container d-flex flex-column justify-content-center align-items-center gap-4 gap-lg-5">
+  <h3 class="d-flex justify-content-center align-items-center gap-2 gap-md-3"><i class="bi bi-check"></i><span>我的收藏</span></h3>
+            <div class="hour w-100 d-flex flex-row gap-2 gap-lg-4">
+                <i class="bi bi-truck"></i>
+<p class="d-flex flex-column flex-lg-row"><span >門市營業時間：</span><span>週一至週五 10:00 - 22:00</span></p>
+            </div>
+            
+            <div class="cards w-100 ">
+                <div class="card d-flex flex-row mb-4 border-bottom pb-3">
+                    <img src="data:image/webp;base64,UklGRhoEAABXRUJQVlA4IA4EAAAQFgCdASp4AHgAPp1Mn0siKaciphVacLATiWcA1dnMCf6n3c32TU7l9V4LaT6Z55CfqX2C/Kj9ev7X+zT+xRYz473fGK+MV8YosYQgKRFJdLQ7alTKkIw4SBlLNZ/YSb8+mP1j/vLtDG9+RM01zzbInp/ekitDjUSJ3T4w2UeZHmW3Ph7dQUE3QZdvkir3cu/az7WJ0uJrTi957KMMuvqjY/2uKTFUu7Z+Q0qkZCEh37hGLA/7x3t4AAD++PdmnfiAAAAWm1eFO7ndbr1sb7Ly6V1Mzuby3wiSlHKCzIb5n8mNUv9wEFV2cmvJxCdlX9cbyESD+DLjQnRtyQWHjGjqMQkm+gFL4vfzZS5Pfrqr2wxX66rWjAlENcMm1x0Zz/gAhbkZJhUMVmHN3y77pSDKO6v3gmHo6UenTzHALqLJUrni6MY6FrL2xVeL+49GSIHGlqjBeeT7Tju2g4qwERtdYjZLTd7IweMdAF0zDS/88vpMAfZVErAOsfMSYa+lWarlvcuc6JPcWVcvpXAnY0oJcMGb/tzF7w1Z4NgYrvNurvynEGIMFugSBx4NR+NRzP1YT41b1QuCcK1sFTsS2I/xy1DFNlzn5WvWSICR3xcnF+PA9/Z/jigLXPr7ttzOS95KbSBvS3jBmUgSk2JRR7p8vcX8bCp/HZPYYv+TXonYUxmglM3rXm1nn7idn4o6RLvwpuScnLdOFVUCaUjKigSYeaWROy1s+wDd1rS9mvfgBirdUzNlHYdLzbGpW0Z4XT3TvlqJl+YpY8BDlN61FGgMrmL1Xi+FM7NJo8h3Z7/rfqdvPOJKEcW7XIJNaHbbmK5lsL1dld4L3e5OOQ2yXAyfG/liqoInfny2oU7lB0V4cZn78rRekWtcVqLWmYjhH/cG6F4XYu6z+t2Bqj4IAfb5F1GvqXQ6/RjWJIOMTB2ovFM4rAIZD4ovo0rnj0916dtfuD7kD95Xb2ijUYeyXmfwyssjNDgtm9tAsqiiJOUiYIksbg9xZvClGdoNcb2my0I+izQSLU8fsbF10+P+WCMFMmDpUwStiNaS+QqGQcynAsmEl0PG1Aml7zr4R9jJ8D7QvivOk63zYINGT5u4trtZs9mHYEP22n/vk/A/biEeeq1WYmVKJZPCwsUYrUjRhChcLn70NOsdhz9oZOCBpiYloOS8P6CH7rqtwE7+s2l2ocwR5Lzyk0Dan6+sKiXByRC+NhjnOyJ1D5rFr0//4/jf1QmtXs9E04kBeZxWT4Ce1PRjHc3lwzSQCSDga+H2F/Tl89VsmZub9UcAjoQiSgRUyBq0m4VL4nEESIXQmaqEpXYlue9QXvjLaTmybs9H7c81EjpBhBhdMSc6leBeN4FhK+2prYL1hAL7AoAAAAA=" alt="Platform 404" class="img-fluid me-3" style="width: 100px;">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <div class="fw-bold">PLATFORM 404</div>
+                        <div class="small">尺寸 38</div>
+                        <div class="small">顏色 Navy</div>
+                        <div class="fw-bold mt-2 text-start text-lg-end">NT$2,600</div>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-row mb-4 border-bottom pb-3">
+                    <img src="data:image/webp;base64,UklGRqwCAABXRUJQVlA4IKACAABwEwCdASp4AHgAPp1OoUwmJSakIxK6MLATiWcA1FZTNYxv9rjJklysXtF4E3w49qHZR69a1Wno6C3C2rR2w890gahkEpDfMp7T1kiPJcf4IgDRikIPOrDn7u7STzkIXQX0dwFkRoJ7zrWUa0ztFN0CgeyEp9Db0fX0QCYBCMYrBEJgMFJ7vaKd+AA+EKa8kndWo2m+LtPq6Oe3h+UpXemZt4X18AD+90Z0w5tPN8008ywkAHQkDxR2JCGL2NIHuSXMqvcvZe+FOPGqF5WvoJQBi6FzOcRH1YfwVIm40+CGlOcFK/VrdLpWBNsQRMMLTcvrIDThaWhNddqzpmuylBY2xCt+59x97J1MMk1fqDkO2sEStcp5CmgcBLWFzoGqyI+AXMdALDRlWgwqR67npf+B/KwYpG5Nx2jSoDVZd6iyj13H31ZhYjGcHwkPasXGwp3SfyVOjbZq3bDw4GRMJEQG7V2uRMO42ziyWUB10CJA429jjRuaaKwBAWEOwDEyMapVclK4dF4cJkE44pH8UKGCS+GUFIFl+JXX+/zrQyn4YI+LMy7hf9QGnf38gGsAKD68jzVb0cwYi16jjEWRgrrFeMxqCrXS7w/b7eNU6hIJs1q4uh0NPyvlGwBpzfluj/Ri7lbs0jCOYhlp3zFUYqzJg3GsYcW8kesVwUZHP88J+UWjbGmy/L7GjE3535Xd62P5cABoapq3ZLpdvQ3xDyNFDYKLqG7kDRJsdBV1eTY2a6wdApXdSjDgyXdFtGqmAcRz2MZqT98O0wJsY+slUqrzRIBgFOwpImQ5X3MbH957rAkwCEJK19rZf2O/ty4d13Gqu4A14Bm2KZqCLNCffiWHZP4XWqQBtriOHwHrGW3D9aP9m3wZ2ZW5QdEAAAAAAAA=" alt="Platform 404" class="img-fluid me-3" style="width: 100px;">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <div class="fw-bold">PLATFORM 404</div>
+                        <div class="small">尺寸 38</div>
+                        <div class="small">顏色 Navy</div>
+                        <div class="fw-bold mt-2 text-start text-lg-end">NT$2,600</div>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-row mb-4 border-bottom pb-3">
+                    <img src="data:image/webp;base64,UklGRqQDAABXRUJQVlA4IJgDAAAQFQCdASp4AHgAPp1Kn0wqJ6MkJJHKMLATiWcA1Onzv0amquTPBW0A7L5dYRJkiKtB5PvfvkyNmrhht1VeT6UetzPbN5gUtJAO5JOV/eWZlAvVwYgXoKui0M+FltPw7i1dInz+nn/wx1mrJ+7lRWXSQZPxW3QRkAZdXbps8SjrdFMdl0fph5UH2Y+0TgWVQ2tReP8PhV7pY3if6p2b95q6m0IlgcWEAeiM2STaewVCjAAA/vj3X4PpAAAABcc3xaM1Wg+BMc4jFtp0a+A8ZbFxRCc0mgJzy+vRCVfL8QYZrr6c1aPEw4gvQ56OEOQJXpr6bKqEmyITYzCSkyYYRqanoitDbkRK0ls+8om+Ybwvr8PCeX8NEfB/hDiLX7Ffb0zfm+vIlzrh1KbgY1dHIYN/ALpdgZlYpSzTjb8ZpjVO0dQ51pUkvIVWv6DNjk6gvMhD7itlzyla4KBLYHo/KavPmck+rIVAFWLVp8XxgaTjRBX4qKAAN+fl6BY1ebq7muILuUXwtNXReMJxX8sGFjB4x3AhQT4V/5DPEe/bW6f3mgIagz6hi7yx1+kPs4U8/kTgd0RZB02CKZlbgQtsk8YKHRCzMeaxEbRS/eKM3POLnIwHRTXsmirnsFqifW1u1oWuy4HjfuNuvLBd1QH/XKH3mQg7lfq/WG5iO05mTLw+8Yf2VfNf8dgaHROLVlaEoWnZMI8G7XZtWZSOFnzkHB61bBABboN6wLTpe9yFjtL5+rTLTWZleyQ+hGGjvSXTIpLsE0u57vlBJ6efvWZkUuyHL0M2OS2bB5HdOKxvznF4ki95EiGzneMyroHiM6+zfDjOFFH2OOWkursG9Yjamd35/xVvCYKRYK4stLLhCYPDojLTsmSVRa36UKmdX+3kEsSaoNV/uWzEbXinH6jTd0U/mMLkw1But/P1yVsXNPTFPyVZ53Xrsa1tf+bnvRz66vM2fmHduL6fdQyxX1FpOaK45xrEJEBpWpJA5K66RaCeww4H3YaxzHZ+5uRf552+2uX6MwI7cHP4kjV/p+5HheBzONd/XzNIUyypK5nWS5cbQO9DgwzIYLKqALbbc8OsKNtmiic8KauIMcbV0ouU8EO+Fs2dQbJHBKsfZeHUAkxZvxA2y42lqg6SSm8ycL8Am/lTWpo2OxDyIte/4+Hqu3B8L5pqLPeH7FsfjBX8+rGtxgJTiA+pvZ6FBZP0HTb5Foiy0wAJJwAAAA==" alt="Platform 404" class="img-fluid me-3" style="width: 100px;">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <div class="fw-bold">PLATFORM 404</div>
+                        <div class="small">尺寸 38</div>
+                        <div class="small">顏色 Navy</div>
+                        <div class="fw-bold mt-2 text-start text-lg-end">NT$2,600</div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <button class="btn btn-secondary">立即預約門市試穿</button>
+        </div>
+    </section>
+
+  </body>
+</html>
