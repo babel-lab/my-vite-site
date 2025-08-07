@@ -1,0 +1,56 @@
+.page-brand{
+    .banner{
+        height: 240px;
+        .banner-content{
+            top: 35%;
+            left: 40%
+        }
+        ;
+        @media (min-width: 376px) {
+            height: 400px;
+            .banner-content{
+                top: 35%;
+            }
+        }
+    }
+}
+
+.story{
+    .container{
+        max-width: 856px;
+        padding: 24px;
+        background: #F5FEE7;
+        h3{
+            color: #57A203
+        }
+        @media (min-width: 376px) {
+            padding: 32px;
+        }
+    }
+}
+
+.intro{
+    max-width: 1076x;
+    img{
+        max-height: 717px;
+    }
+}
+
+.intro-part{
+    max-width: 856px;
+    padding: 38px 0;
+    border-bottom: 1px solid #DEE2E6;
+    h4{color:#57A203;}
+    @media (min-width: 376px) {
+        padding: 42px 0;
+    }
+    .year{
+        border-right: 1px solid #212529;
+        padding-right: 16px;
+        margin-right: 16px;
+    }
+    a{
+        color: #57A203;
+        text-decoration: underline;
+    }
+}

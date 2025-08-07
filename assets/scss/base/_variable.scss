@@ -1,0 +1,25 @@
+// _typography.scss
+$h1-size: clamp(48px, 5vw, 64px);
+$h2-size: clamp(32px, 4vw, 48px);
+$h3-size: clamp(24px, 3vw, 32px);
+$h6-size: clamp(14px, 2vw, 16px);
+$body-size: clamp(16px, 2.5vw, 18px);
+
+// colors
+$primary: #212529;
+$secondary: #ffffff;
+
+$accent: #C0FA73;
+$accent-heavy: #E8FEC5;
+$accent-light: #F5FEE7;
+
+// text
+$text-primary: $primary;
+$text-secondary: $secondary;
+
+// buttons
+$btn-primary-bg: $accent;
+$btn-primary-color: $primary;
+$btn-secondary-bg: $primary;
+$btn-secondary-color: $secondary;
+

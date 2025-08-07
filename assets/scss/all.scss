@@ -1,5 +1,14 @@
+@import './base/reset.scss';
+@import './base/variable.scss';
+
+@import './components/components.scss';
+
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
-
+@import './layout/layout.scss';
 
 @import './pages/index.scss';
+@import './pages/brand.scss';
+@import './pages/product.scss';
+@import './pages/favorite.scss';

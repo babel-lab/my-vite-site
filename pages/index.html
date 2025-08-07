@@ -1,16 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
+  <%- include('./layout/head'); -%>
+  <body class="page-index">
     <%- include('./layout/header'); -%>
+    <div class="banner w-100 d-block">
+      <div class="banner-content">
+        <div class="title">
+          <h1>URBNSTEP</h1>
+          <h3>URBNSTEP</h3>
+        </div>
+        <button class="btn btn-primary mt-4 mt-md-5">立即選購</button>
+      </div>
+      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner.png">
+    </div>
+    <section class="new">
+      <div class="container">
+        <div class="title text-center mb-4 mb-md-5">
+          <h2>New Arrival</h2>
+          <h3>新品上市</h3>
+        </div>        
+        <div class="cards d-flex flex-wrap justify-content-between gap-3 gap-md-4">
+          <div class="card flex-basis-48">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-1.png">
+            <div class="card-body">
+              <h5 class="">Monoverse</h5>
+              <p class="">NT$3,600</p>
+            </div>
+          </div>
+          <div class="card flex-basis-48">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-2.png">
+            <div class="card-body">
+              <h5 class="">PLATFORM 404</h5>
+              <p class="">NT$2,600</p>
+            </div>
+          </div>
+          <div class="card flex-basis-48">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-3.png">
+            <div class="card-body">
+              <h5 class="">URBN Force</h5>
+              <p class="">NT$3,200</p>
+            </div>
+          </div>
+          <div class="card flex-basis-48">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/new-4.png">
+            <div class="card-body">
+              <h5 class="">Mode90</h5>
+              <p class="">NT$4,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="hot">
+      <div class="container">
+        <h3 class="mb-4">熱銷補貨</h3>
+        <div class="cards d-flex gap-3 gap-md-4">
+          <div class="card">
+            <h6>人氣 No.1</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-3.png">
+          </div>
+          <div class="card">
+            <h6>人氣 No.1</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product.png">
+          </div>
+          <div class="card">
+            <h6>人氣 No.1</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-6.png">
+          </div>
+          <div class="card">
+            <h6>人氣 No.1</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="banner banner-promo d-block">
+      <div class="banner-content w-100 text-center">
+        <div class="title">
+          <h2 class="d-flex flex-column flex-md-row gap-2 gap-md-4 justify-content-center text-center"><span>URBNSTEP</span><span class="cross">X</span><span>Kevin Chen</span></h2>
+          <h3>跨界聯名，限量發售</h3>      
+        </div>
+        <p>新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
+        <button class="btn btn-primary mt-4 mt-md-5">立即搶購</button>
+      </div>
+      <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/banner-co-branded.png">
+    </div>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
+    <section class="select">
+      <div class="container">
+        <h3 class="mb-4">依系列選購</h3>
+        <div class="cards d-flex flex-wrap justify-content-between gap-2 gap-md-3">
+  <div class="card" style="width: 48%; width: calc(25% - 0.75rem);">
+            <h6>URBN RUNNER</h6>
+            <h6>慢跑系列</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/product-11.png">
+          </div>
+          <div class="card" style="width: 48%; width: calc(25% - 0.75rem);">
+            <h6>STREETMODE</h6>
+            <h6>滑板系列</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png">
+          </div>
+          <div class="card" style="width: 48%; width: calc(25% - 0.75rem);">
+            <h6>CHUNK DISTRICT</h6>
+            <h6>厚底系列</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/product-10.png">
+          </div>
+          <div class="card" style="width: 48%; width: calc(25% - 0.75rem);">
+            <h6>COLLAB ZONE</h6>
+            <h6>聯名企劃</h6>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week2/product-4.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section class="select flash">
+      <div class="container">
+        <h3 class="mb-4">穿搭靈感</h3>
+        <div class="d-flex column-gap-8 column-md-gap-16 overflow-md-auto">
+            <div class="d-flex flex-column row-gap-8 w-66 d-md-contents">
+              <div class="d-flex flex-grow-1 column-gap-8 d-md-contents">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-1.png" alt="穿搭1" />
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-2.png" alt="穿搭2" />
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-3.png" alt="穿搭3" />
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-12.png" alt="穿搭4" />
+              </div>
+              <div class="d-flex column-gap-8 d-md-contents">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-4.png" alt="穿搭5" />
+                <div class="d-flex flex-column row-gap-8 d-md-contents">
+                  <div class="d-flex column-gap-8 d-md-contents">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-5.png" alt="穿搭7" />
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-6.png" alt="穿搭8" />
+                  </div>
+                  <div class="d-flex column-gap-8 d-md-contents">
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-7.png" alt="穿搭9" />
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-8.png" alt="穿搭6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column row-gap-8 w-33 d-md-contents">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-9.png" alt="穿搭10" />
+              <div class="d-flex column-gap-8 d-md-contents">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-10.png" alt="穿搭11" />
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/inspiration-11.png" alt="穿搭12" />
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>
 
     <%- include('./layout/footer'); -%>
 

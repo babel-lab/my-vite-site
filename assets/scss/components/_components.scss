@@ -1,0 +1,19 @@
+.btn{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn.btn-primary{
+    background: $btn-primary-bg;
+    color: $btn-primary-color;
+}
+
+.btn.btn-secondary{
+    background: $primary;
+    color: $secondary;
+}
+
+.card{
+    border: 0;
+}

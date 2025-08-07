@@ -1,0 +1,49 @@
+.page-product{
+    .category{
+        .crumbs{color: #6C757D;
+        .active{
+            color:#212529;
+        }
+    li{
+          &:not(:last-child){
+            &::after{
+                content: '/';
+            }
+          }  
+        }
+    }
+      .list{        
+        .active{color:#57A203;}
+        display: none;
+        @media (min-width: 376px) {
+            display: flex;
+            flex-shrink: 0;
+        }
+      }  
+        .cards .card {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(33.333% - 16px); /* 3欄減掉 gap */
+
+  @media (max-width: 375px) {
+    flex-basis: calc(50% - 12px); /* 小版 2欄 */
+  }
+}
+        @media (min-width: 768px) {
+            .w-md-30 {
+                width: 25%;
+            }
+            .w-md-70 {
+                width: 70%;
+            }
+        }
+    }
+    .pages{
+        .page-item.active a{background:#C0FA73;}
+        a{
+            color: #212529;
+            border:0;
+            background: transparent;
+        }
+    }
+}

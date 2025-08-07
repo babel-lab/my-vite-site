@@ -1,0 +1,22 @@
+.page-favorite{
+    .collection{
+        .container{
+            max-width: 636px;
+        }
+        .bi-check {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border:0;
+            border-radius: 50%;
+            background-color: #C0FA73;
+            color: #477A11;
+        }
+        .hour{
+            background: #F5FEE7;
+            padding: 16px;
+            color: #57A203;
+        }
+        .btn-secondary{width:fit-content;}
+    }
+}

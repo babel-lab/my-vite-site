@@ -1,4 +1,13 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.discount{
+  background: #E8FEC5;
+}
+
+footer{
+  margin: 32px 0;
+  @media (min-width: 376px) {
+    margin: 64px 0;
+  }
+  .footer{
+    color: #6C757D;
+  }
 }
