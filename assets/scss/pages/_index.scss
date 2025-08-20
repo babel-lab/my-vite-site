@@ -1,3 +1,71 @@
 .page-index{
-  nav{display: flex;} 
+
+  
+header{    
+    nav{
+        font-weight: 500; 
+        align-items: center;
+        order: 3; 
+        width: 100%;
+        display: flex;
+        li{
+            width: 50%;
+            padding: 12px;
+            text-align: center;
+            background: #F5FEE7;
+            &.active{
+                background: #E8FEC5;
+                @media (min-width: 376px) {
+                    background: transparent;
+                }
+            }
+        }
+        @media (min-width: 376px) {
+            order: 2;
+            //display: none;
+            align-items: flex-start;
+            flex-grow: 1;
+            width: auto;
+            ul{gap:48px;}
+            li{
+                width: fit-content;
+                padding: 0;
+                background: transparent;
+            }
+        }
+    }
+    .icon{
+      order: 2;
+      @media (min-width: 376px) {
+        order: 3;
+      }
+    }
 }
+
+}
+
+.select{
+
+  .card{
+    width: 48%; 
+     @media (min-width: 376px) {
+      width: calc(25% - 0.75rem);
+     }
+    
+  }
+}
+
+  .select-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }

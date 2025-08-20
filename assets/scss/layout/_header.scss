@@ -1,3 +1,4 @@
+
 header{    
     nav{
         font-weight: 500; 
@@ -10,7 +11,6 @@ header{
             padding: 12px;
             text-align: center;
             background: #F5FEE7;
-            //display: none;
             &.active{
                 background: #E8FEC5;
                 @media (min-width: 376px) {
@@ -19,8 +19,8 @@ header{
             }
         }
         @media (min-width: 376px) {
-            display: flex;
             order: 2;
+            display: none;
             align-items: flex-start;
             flex-grow: 1;
             width: auto;

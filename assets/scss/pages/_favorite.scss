@@ -16,7 +16,19 @@
             background: #F5FEE7;
             padding: 16px;
             color: #57A203;
+            align-items: center;
+            p{
+                margin-bottom: 0;
+            }
         }
         .btn-secondary{width:fit-content;}
+        h3{
+            font-family: "Castoro", serif;
+            font-size: 24px;
+            font-weight: 700;
+            @media (min-width: 376px) {
+                font-size: 28px;
+            }
+        }
     }
 }

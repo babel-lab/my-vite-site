@@ -1,17 +1,8 @@
 
-body{
-    font-family: 'Noto Sans TC', serif;
-    font-size: $body-size;
-    line-height: 1.5;
-    letter-spacing: 0.05em;
-}
-
-body, a{color: $text-primary;}
-
-body, .container{max-width: 1920px;}
 
 .container{
     padding: 0 12px;
+    margin: 0 auto;
 }
 
 //小版是滿版的.container
@@ -19,58 +10,7 @@ header { .container{padding: 0;}}
 //大版是1296PX
 header, section{ .container{max-width: 1296px;}}
 
-ul,ol {padding-left: 0;margin: 0;list-style: none;}
 
-a{text-decoration: none;}
-
-h1,h2,h3{font-weight:700;}
-h1{
-    font-size: $h1-size;
-    line-height: 0.4;
-}
-h2{
-    font-size: $h2-size;
-}
-h3{
-    font-size: $h3-size;
-}
-h6{
-    font-size: $h6-size;
-}
-
-header{    
-    nav{
-        font-weight: 500; 
-        align-items: center;
-        order: 3; 
-        width: 100%;
-        li{
-            width: 50%;
-            padding: 12px;
-            text-align: center;
-            background: #F5FEE7;
-            //display: none;
-            &.active{
-                background: #E8FEC5;
-                @media (min-width: 376px) {
-                    background: transparent;
-                }
-            }
-        }
-        @media (min-width: 376px) {
-            order: 2;
-            align-items: flex-start;
-            flex-grow: 1;
-            width: auto;
-            ul{gap:48px;}
-            li{
-                width: fit-content;
-                padding: 0;
-                background: transparent;
-            }
-        }
-    }
-}
 
 .logo{img{width:129px; height:46px;}}
 
@@ -152,46 +92,44 @@ section{
 }
 
 .flash{
-
-
-.flex-column {
-  flex-direction: column;
-}
-.flex-grow-1 {
-  flex-grow: 1;
-}
-.column-gap-8 {
-  column-gap: 8px;
-}
-.row-gap-8 {
-  row-gap: 8px;
-}
-.w-66 {
-  width: 66%;
-}
-.w-33 {
-  width: 33%;
-}
-img{
-    max-width: 100%;
-  min-width: 0;
-  display: block;
-  object-fit: cover;
-}
-@media screen and (max-width: 768px) {
-  img {
-    width: 300px;
-    height: 300px;
-    min-width: auto;
-  }
-  .d-md-contents {
-    display: contents !important;
-  }
-  .column-md-gap-16 {
-    column-gap: 16px;
-  }
-  .overflow-md-auto {
-    overflow-x: auto;
-  }
-}
+    .flex-column {
+        flex-direction: column;
+        }
+        .flex-grow-1 {
+        flex-grow: 1;
+        }
+        .column-gap-8 {
+        column-gap: 8px;
+        }
+        .row-gap-8 {
+        row-gap: 8px;
+        }
+        .w-66 {
+        width: 66%;
+        }
+        .w-33 {
+        width: 33%;
+        }
+        img{
+            max-width: 100%;
+            min-width: 0;
+            display: block;
+            object-fit: cover;
+        }
+    @media screen and (max-width: 768px) {
+        img {
+            width: 300px;
+            height: 300px;
+            min-width: auto;
+        }
+        .d-md-contents {
+            display: contents !important;
+        }
+        .column-md-gap-16 {
+            column-gap: 16px;
+        }
+        .overflow-md-auto {
+            overflow-x: auto;
+        }
+    }
 }
