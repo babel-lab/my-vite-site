@@ -44,6 +44,10 @@
             color: #212529;
             border:0;
             background: transparent;
+            &:hover{
+                background-color: #F8F9FA
+            }
         }
+
     }
 }
